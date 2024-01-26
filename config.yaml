@@ -1,0 +1,8 @@
+version: 3
+endpoint: http://localhost:8080
+admin_secret: asdnijlsasdaskqwlapduhefns
+HASURA_GRAPHQL_JWT_SECRET: '{"type": "HS256", "key": "3EK6FD+o0+c7tzBNVfjpMkNDi2yARAAKzQlk8O2IKoxQu4nF7EdAh8s3TwpHwrdWT6R"}'
+metadata_directory: metadata
+actions:
+  kind: synchronous
+  handler_webhook_baseurl: http://localhost:3000

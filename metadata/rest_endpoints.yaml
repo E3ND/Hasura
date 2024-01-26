@@ -1,0 +1,54 @@
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: Read
+  methods:
+    - GET
+  name: Read
+  url: user
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: create
+  methods:
+    - POST
+  name: create
+  url: user
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: DeleteUser
+  methods:
+    - DELETE
+  name: DeleteUser
+  url: user/:id
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: UpdateUSer
+  methods:
+    - PATCH
+  name: UpdateUSer
+  url: user/:id
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: findByEmail
+  methods:
+    - POST
+  name: findByEmail
+  url: user/email
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: login
+  methods:
+    - GET
+  name: login
+  url: user/login

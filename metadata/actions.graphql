@@ -1,0 +1,31 @@
+type Mutation {
+  actionName(
+    params: SampleInput!
+  ): SampleOutput
+}
+
+type Mutation {
+  login(
+    params: LoginInput!
+  ): LoginOutput
+}
+
+input SampleInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type SampleOutput {
+  access_token: String!
+}
+
+type LoginOutput {
+  access_token: String!
+}
+
